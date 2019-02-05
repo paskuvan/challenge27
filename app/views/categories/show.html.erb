@@ -29,7 +29,12 @@
       <td> <%= product.price %> </td>
       <td>
     <div class="btn btn-danger">
-      <%= link_to 'x',  category_product_path(@category, product),  method: :delete  %>
+      <%= link_to 'X',  category_product_path(@category, product),  method: :delete  %>
+    </div>
+      </td>
+      <td>
+        <div class="btn btn-primary">
+      <%= link_to 'Edit',  edit_category_product_path(@category, product) %>
     </div>
       </td>
     </tr>
